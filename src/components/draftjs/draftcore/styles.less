@@ -1,0 +1,33 @@
+@import '../../common/branding';
+.editor{
+  position: relative;
+  //background-color: rgba(204, 220, 220, 0.3); 
+  &.edit {
+    background-color:@background_color_editor;
+    min-height:5em;
+    padding:@small;
+    margin-bottom:@small;
+  }
+  border:0;
+  position:relative;
+  width:100%;
+  padding:0;
+  resize:none;
+  
+  &:focus {
+    outline:none;
+  }
+}
+.counterOverLimit {
+  color: @text_color_error;
+  margin-top: 1rem;
+  display: block;
+}
+:global{
+    .public-DraftEditorPlaceholder-root {
+        color:@text_color_alt; 
+    &.public-DraftEditorPlaceholder-hasFocus {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "draft-js-emoji-mart",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-scripts-ts-lessc": "0.0.2",
+    "concurrently": "^3.4.0",
+    "mobx-react-devtools": "4.2.11",
+    "onchange": "^3.2.1",    
+    "shelljs": "^0.7.7",
+    "typed-css-modules": "^0.2.0"
+  },
+  "dependencies": {
+    "@types/draft-js": "0.10.22",
+    "@types/jest": "^18.1.1",
+    "@types/node": "^7.0.5",
+    "@types/react": "15.0.14",
+    "@types/react-dom": "0.14.23",    
+    "@types/shelljs": "^0.7.0",
+    "react": "15.4.2",
+    "react-dom": "15.4.2",    
+    "draft-js": "0.10.5",
+    "find-with-regex": "^1.0.2",
+    "linkify-it": "^2.0.3",
+    "emoji-mart": "^2.5.1",
+    "mobx": "3.1.2",
+    "mobx-react": "4.1.1",  
+    "prop-types": "^15.6.1",  
+    "react-tooltip": "3.2.7",
+    "tlds": "^1.183.0",    
+    "uuid": "^3.0.1"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run watchless\" \"npm run startApp\" ",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject",
+    "startApp": "react-scripts-ts start",
+    "watchless": "npm run compiletypescript -- ./server/buildless.ts&& onchange \"src/**/*.less\" -- node ./server/buildless.js lessfile:\"{{changed}}\"",
+    "compiletypescript": "tsc -t ES6 -m commonjs "
+  }
+}

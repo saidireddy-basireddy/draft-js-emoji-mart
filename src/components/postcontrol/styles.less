@@ -1,0 +1,70 @@
+@import '../common/branding';
+/* TODO: centralise */
+.fullname {
+  color: #000;
+  font-size:@font_size_base;
+  font-weight: bold;
+  text-decoration: none;
+  :global(.mobile) & {
+        margin-left: 4rem;
+        margin-top: -3rem;
+        margin-bottom: 3rem;
+  }
+  a {
+    color: #000;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+  .appTitle {
+    composes: appTitleBase;
+    background-color:@postheader_title_background_color;
+  }
+
+.editor {
+  background-color:@background_color_primary;
+  border:0;
+  position:relative;
+  min-height:4em;
+  height: 4em !important;
+  width:100%;
+  padding:0.5rem;
+  margin-bottom:@small;
+  resize:none;
+  &:focus {
+    outline:none;
+  }
+}
+
+.editor :global(.public-DraftEditor-content) {
+  min-height: 4rem;
+}
+
+.postStatus {
+  background-color:@background_color_alt;
+  padding:@large !important;
+  position: relative;
+  z-index:99999;
+  fieldset {
+    display: inline-block;
+    width: ~'calc(100% - @{image_preview_size})';
+    border: none;
+    margin: 0 0 0 @defaultSize;
+    padding: 0;
+    :global(.mobile) & {
+        width: 100%;
+        margin-left: 0;
+    }
+  }
+}
+
+
+.formButtons {
+  width: 50%;
+  display: inline;
+}
+.postToggleColor {
+    color:@text_color_white;
+}

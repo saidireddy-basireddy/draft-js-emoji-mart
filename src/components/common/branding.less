@@ -1,0 +1,126 @@
+/** __ Brand __*/
+@brand_primary: #489aa2;
+@brand_secondary: #00335b;
+@brand_highlight: #8b601f;
+@brand_background: @background_color_primary;
+@brand_alt_font_color: rgb(180, 106, 31);
+@brand_link_color: @brand_primary;
+@brand_alt_border_color: @brand_alt_font_color;
+@brand_link_color: @brand_primary;
+@brand_featured_promotions_color:#571096;
+/**__ Global __*/
+@background_color_primary: #F3F4F8;
+@background_color_highlight: #fbfcfd;
+@background_color_alt: #ffffff;
+@background_color_dark: #999999;
+@background_color_nav_tabs: #f9fafb;
+@background_color_nav: #bd8533;
+@background_color_off_white: #d0d0d0;
+@background_color_editor: rgba(204,220,220,0.3);
+@background_color_popups: @background_color_primary;
+
+@border_primary: @brand_primary;
+@border_secondary: #ffffff;
+@border_dark: #999999;
+@border_light: #cccccc;
+@border_list: #e7e7e7;
+@border_off_white: #d0d0d0;
+
+@border_thick:0.3571rem;
+@border_medium: 0.2143rem;
+@border_thin: 0.07143rem;
+
+@text_color: #333333;
+@text_color_alt: #999999;
+@text_highlight: @brand_primary;
+@text_color_strong: #000000;
+@text_weight_strong: bold;
+@text_color_white: #ffffff;
+@text_color_brand_primary: rgb(151, 100, 24);
+@text_color_off_white: #d0d0d0;
+@text_color_medium_grey: #545454;
+@text_color_error: red;
+@link_decoration: none;
+@link_color:@brand_primary;
+@link_hover_color:@brand_primary;
+@link_hover_decoration: underline;
+
+@font_family_primary: 'Gotham_Regular', sans-serif;
+@font_family_secondary: 'Gotham_Bold', sans-serif;
+@font_family_content: Arial, sans-serif;
+@font_family_nav: @font_family_content;
+@font_family_forms: Arial, sans-serif;
+
+@font_size_set: 14px;
+@font_size_base: 1rem; /* 1rem */
+@font_weight_base: normal;
+@font_size_nav: 1.714rem; /*24px*/
+@font_size_h1: 1.571rem; /*22px*/
+@font_weight_h1: bold;
+@font_size_h2: 1.286rem; /* 18px */
+@font_weight_h2: bold;
+@font_family_h2: @font_family_secondary;
+@generics_h2_text_color: @brand_secondary;
+@font_size_h3: 1.143rem;
+@font_weight_h3: bold;
+@font_family_h3: @font_family_secondary;
+@generics_h3_text_color: @brand_secondary;
+@font_size_h4: 1rem;
+@font_weight_h4: bold;
+@font_size_large: 1.143rem; /* 16px */
+@font_size_small: 0.8571rem; /* 12px */
+@font_size_13: 0.9286rem; /*13px*/
+@font_size_mini: 0.7857rem; /* 11px */
+@line_height_base: 1.429 * @font_size_base; /*20px*/
+@font_size_logo: @font_size_h1;
+@font_size_mobile_logo: 1.214rem; /* 17px */
+
+@small: 0.7143rem; /* 10px */
+@medium: 1.071rem; /* 15px */
+@defaultSize: @medium;
+@large: 1.429rem; /* 20px */
+
+
+@postheader_title_background_color: #489aa2;
+@postheader_title_color: #ffffff;
+@posts_title_background_color: @postheader_title_background_color;
+@posts_title_color: @postheader_title_color;
+@posts_toggle_color: #fff;
+@posts_comment_box_text_color: @text_highlight;
+@posts_comment_wrapper_background_color: #f5f8fa;
+
+.appTitleBase {
+  background-color:@brand_primary;
+  color:@text_color_white;
+  font-size: 1.286rem;
+  font-family:@font_family_primary;
+  border-top: none;
+  font-weight: bold;
+  margin: 0;
+  max-height: 40px;
+  padding: 0.3571rem 0 0.3571rem 0.7143rem;
+  cursor: pointer;
+  border-bottom: 0;
+  line-height: 2.143rem;
+  min-height: 2.857rem;
+}
+
+@keyframes fadein {
+    0%  { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeout {
+    0%  { opacity: 1; }
+    100% { opacity: 0.1; }
+}
+
+.fontawesomeglyphs {
+  font-family: FontAwesome;
+}
+@image_preview_size: 8rem;
+.image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
